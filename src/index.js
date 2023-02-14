@@ -11,7 +11,7 @@ else {
         (await import("dotenv/config")); // * ENV
         (await import("./Client/index.js")); // * STARTS CLIENT
         (await import("./Web/index.js")); // * WEB MANAGER
-        (await import("../../Builds/yotubeReminder.js")) // * YOTUBE REMINDER
+        (await import("./Builds/yotubeReminder.js")) // * YOTUBE REMINDER
     }();
 
 }
