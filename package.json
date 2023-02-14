@@ -1,0 +1,36 @@
+{
+  "name": "selfbot",
+  "version": "0.2.0",
+  "description": "An selfbot with discord.js-selfbot-v13",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord.js",
+    "self"
+  ],
+  "author": "uwuv3",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "connect-flash": "^0.1.1",
+    "discord-rpc-contructor": "^1.1.5",
+    "discord.js-selfbot-v13": "^2.10.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "ejs-lint": "^2.0.0",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "moment": "^2.29.4",
+    "nukleon": "^0.0.2",
+    "os": "^0.1.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "rss-parser": "^3.12.0"
+  }
+}

@@ -1,0 +1,16 @@
+<% if (error_msg && error_msg.length > 0) { %>
+<script>
+  window.onload = (event) =>
+    Swal.fire({ icon: "error", title: "<%= error_msg %>" });
+</script>
+<%}%> <% if (success_msg && success_msg.length > 0) { %>
+<script>
+  window.onload = (event) =>
+    Swal.fire({ icon: "success", title: "<%= success_msg %>" });
+</script>
+<%}%> <% if (error && error.length > 0) { %>
+<script>
+  window.onload = (event) =>
+    Swal.fire({ icon: "error", title: "<%= error %>" });
+</script>
+<%}%>

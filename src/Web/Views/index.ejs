@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('includes/header') %>
+  </head>
+
+  <body>
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen-sm">
+        <div class="modal-content" style="background-color: gray !important">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          </div>
+          <div class="modal-body">
+            <form action="/login" method="POST">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input
+                  type="username"
+                  id="username"
+                  name="username"
+                  class="form-control"
+                  required="true"
+                  placeholder="Please enter a username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  required="true"
+                  placeholder="Please enter a password"
+                />
+              </div>
+              <br />
+              <div class="modal-footer">
+                <button class="btn btn-outline-danger" disabled>C̶l̶o̶s̶e̶</button>
+                <button type="submit" class="btn btn-outline-primary">
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  const myModal = new bootstrap.Modal(document.getElementById("myModal"), {
+    backdrop: false,
+    keyboard: false,
+  });
+  myModal.toggle();
+</script>

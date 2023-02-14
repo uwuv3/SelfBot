@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('includes/header') %>
+  </head>
+  <body>
+    <%- include('includes/navbar') %>
+    <div style="max-width: 500px; min-width: 500px">
+      <canvas id="ping"></canvas>
+    </div>
+
+    <script>
+      const ping = document.getElementById("ping");
+      const pings = JSON.parse(`<%- user_client.ping %>`);
+      window.onload = (e) => {
+        new Chart(ping, {
+          type: "line",
+          data: {
+            labels: pings.map((row) => row.date),
+            datasets: [
+              {
+                label: "Ping stats",
+                backgroundColor: pings.map((row) => row.color),
+                data: pings.map((row) => row.ping),
+              },
+            ],
+          },
+        });
+      };
+    </script>
+  </body>
+</html>

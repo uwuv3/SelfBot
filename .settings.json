@@ -1,0 +1,51 @@
+{
+  "logging": true,
+  "client": {
+    "enabled": true,
+    "token": "",
+    "prefix": "!",
+    "admins": [850268232328806420, 830459745008615434],
+    "clientOptions": {
+      "checkUpdate": false,
+      "presence": { "status": "online" },
+      "ws": {
+        "properties": {
+          "browser": "Discord Android",
+          "device": "Phone",
+          "os": "Android"
+        }
+      },
+      "syncStatus": true
+    },
+    "eventLoader": true,
+    "commandLoader": true,
+    "maxPing": 500
+  },
+  "webserver": {
+    "defaultPORT": 8080
+  },
+  "youtubeReminder": {
+    "enabled": true,
+    "everySync": 300000,
+    "options": [
+      {
+        "type": "console",
+        "typeReq": "FOR SECURITY",
+        "youtubeID": "FOR SECURITY",
+        "message": "{author} just now uploaded a video {title} => {url}"
+      },
+      {
+        "type": "channel",
+        "typeReq": "FOR SECURITY",
+        "youtubeID": "FOR SECURITY",
+        "message": "**{author}** just now uploaded a video **{title}**!\n{url}"
+      },
+      {
+        "type": "webhook",
+        "typeReq": "FOR SECURITY",
+        "youtubeID": "FOR SECURITY",
+        "message": "**{author}** just now uploaded a video **{title}**!\n{url}"
+      }
+    ]
+  }
+}
